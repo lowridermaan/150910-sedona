@@ -1,6 +1,6 @@
 ﻿# Личный проект «Седона»
 
-* Студент: [Александр lowridermaan Харкевич](https://up.htmlacademy.ru/htmlcss/13/user/150910).
+* Студент: [Александр Харкевич](https://up.htmlacademy.ru/htmlcss/13/user/150910).
 * Наставник: [Дмитрий Лебедев] (https://htmlacademy.ru/profile/id51265).
 
 ---
