@@ -1,0 +1,238 @@
+@font-face {
+        font-family: 'PT Sans','arial', sans-serif;
+        src: url(../fonts/ptsans.woff) format('woff'),
+        url(../fonts/ptsans.woff2) format('woff2'),
+        url(../fonts/ptsansbold.woff) format('woff'),
+        url(../fonts/ptsansbold.woff2) format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: 'PT Sans','arial', sans-serif;
+}
+
+body{
+  /*background: #ffffff url(../img/Sedona_index.jpg) no-repeat 50% 0;*/
+
+}
+
+ul{
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li{
+  font-size: 14px;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.wrap{
+  margin: 0 auto;
+  width: 1200px;
+  /*outline: 1px solid red;*/
+}
+
+.header{
+  outline: 1px solid green;
+}
+
+.main-menu{
+  min-height: 56px;
+}
+
+.navigation li{
+  outline: 1px solid green;
+  margin-left: 1px;
+  margin-top: 14px;
+  width: 239px;
+  text-align: center;
+}
+
+.navigation li:not(:first-child) a{
+  margin-left: 5px;
+}
+
+.navigation li:last-child a{
+  margin-left: 20px;
+}
+
+.logo{
+  position: absolute;
+  top: -32px;
+  right: 50px;
+}
+
+.main-container{
+  padding-top: 75px;
+  background: #ffffff url(../img/background_photo_1.jpg) no-repeat 50% 0;
+}
+
+/*Блок с надписями*/
+.logo-block{
+  position: relative;
+  width: 244px;
+}
+
+
+.logo-banner{
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.logo-banner::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background: url('../img/deco.png') no-repeat;
+}
+
+.banner-logos{
+  margin: 0  auto 55px auto;
+}
+
+.welcome-logo{
+  width:256px;
+  height: 86px;
+}
+
+.big-logo{
+  width:458px;
+  height: 78px;
+}
+
+.slogan-logo{
+  width:296px;
+  height: 80px;
+}
+/*Блок-причины*/
+.summary-block{
+  background-color: #fefefe;
+  padding: 40px 300px 48px 300px;
+}
+
+.summary{
+  text-align: center;
+}
+
+.summary-title,
+.up-block-title1,
+.up-block-title2{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'PT Sans','arial', sans-serif;
+}
+
+.summary p,
+.block1 p{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: 'PT Sans','arial', sans-serif;
+}
+
+/*Блоки с причинами*/
+
+.reason{
+  margin-bottom: 74px;
+}
+
+.block1{
+  outline: 1px solid red;
+  position: relative;
+  width: 400px;
+  height: 256px;
+}
+
+.reason-1 .block1::after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top:0;
+  left:100%;
+  width: 800px;
+  height:256px;
+  background: url('../img/foto_2.jpg') no-repeat;
+}
+
+.up-block-title1,
+.up-block-title2{
+  margin: 0px 50px;
+  padding-top: 50px;
+  padding-bottom: 34px;
+  text-align: center;
+}
+.up-block-title2{
+  margin: 0px 40px;
+}
+
+.block2{
+  height: 256px;
+}
+
+.reason-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-block{
+  margin: 0;
+  outline: 1px solid green;
+  font-size: 26;
+  width: 400px;
+  height: 256px;
+}
+
+.pic-up-1{
+  background: url(../img/house.png) no-repeat 50% 32%;
+}
+
+.pic-up-2{
+  background: url(../img/burger.png) no-repeat 50% 32%;
+}
+
+.pic-up-3{
+  background: url(../img/prise.png) no-repeat 50% 32%;
+}
+
+.reason-2 .block1{
+  margin-left: 800px;
+  position: relative;
+}
+
+.reason-2 .block1::before{
+  outline: 1px solid green;
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left:-200%;
+  top:0;
+  right:0;
+  width: 800px;
+  height:256px;
+  background: url('../img/foto_3.jpg') no-repeat;
+}
