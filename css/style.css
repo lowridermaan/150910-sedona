@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url(../fonts/ptsans.woff) format('woff'),
+  url(../fonts/ptsans.woff2) format('woff2'),
+  url(../fonts/ptsansbold.woff) format('woff'),
+  url(../fonts/ptsansbold.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans','arial', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+body{
+  /*background: #ffffff url(../img/Sedona_index.jpg) no-repeat 50% 0;*/
+}
+
+
+ul{
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+li{
+  font-size: 14px;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.social ul li>a{
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.wrap{
+  margin: 0 auto;
+  width: 1200px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  background: url(../img/map.jpg) no-repeat 50% 100%;
+}
+
+.header{
+  background-color: #ffffff;
+}
+
+.main-menu{
+  min-height: 56px;
+}
+
+.navigation li{
+  margin-left: 1px;
+  margin-top: 14px;
+  width: 239px;
+  text-align: center;
+}
+
+.navigation li:not(:first-child) a{
+  margin-left: 5px;
+}
+
+.navigation li:last-child a{
+  margin-left: 20px;
+}
+
+.logo{
+  position: absolute;
+  top: -32px;
+  right: 50px;
+}
+
+.main-container{
+  padding-top: 75px;
+  background: url(../img/background_photo_1.jpg) no-repeat 50% 0;
+}
+
+/*Блок с надписями*/
+.logo-block{
+  position: relative;
+  width: 244px;
+}
+
+
+.logo-banner{
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.logo-banner::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 1200px;
+  height: 57px;
+  background: url('../img/deco.png') no-repeat;
+}
+
+.banner-logos{
+  margin: 0  auto 55px auto;
+}
+
+.welcome-logo{
+  width:256px;
+  height: 86px;
+}
+
+.big-logo{
+  width:458px;
+  height: 78px;
+}
+
+.slogan-logo{
+  width:296px;
+  height: 80px;
+}
+/*Блок-причины*/
+.summary-block{
+  background-color: #fefefe;
+  padding: 40px 300px 48px 300px;
+}
+
+.summary{
+  text-align: center;
+}
+
+.summary-title,
+.up-block-title1,
+.up-block-title2,
+.city-rew span,
+.diablo-rew span,
+.search-title h1,
+.visitsedona a{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'PT Sans','arial', sans-serif;
+}
+
+.summary p,
+.block1 p,
+.city-rew p,
+.diablo-rew p,
+.question p{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: 'PT Sans','arial', sans-serif;
+}
+
+/*Блоки с причинами*/
+
+.reason-1{
+  margin-bottom: 73px;
+}
+
+.block1{
+  position: relative;
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.reason-1 .block1::after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top:0;
+  left:100%;
+  width: 800px;
+  height:256px;
+  background: url('../img/foto_2.jpg') no-repeat;
+}
+
+.up-block-title1,
+.up-block-title2{
+  margin: 0px 50px;
+  padding-top: 50px;
+  padding-bottom: 34px;
+  text-align: center;
+}
+.up-block-title2{
+  margin: 0px 40px;
+}
+
+.list-block{
+  font-size: 26;
+  width: 380px;
+  height: 236px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.pic-up-1{
+  background: url(../img/house.png) no-repeat 50% 32%;
+}
+
+.pic-up-2{
+  background: url(../img/burger.png) no-repeat 50% 32%;
+}
+
+.pic-up-3{
+  background: url(../img/prise.png) no-repeat 50% 32%;
+}
+
+.reason-2 .block1{
+  margin-left: 800px;
+  position: relative;
+}
+
+.reason-2 .block1::before{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left:-200%;
+  top:0;
+  right:0;
+  width: 800px;
+  height:256px;
+  background: url('../img/foto_3.jpg') no-repeat;
+}
+
+.city-rew{
+    padding: 0 40px;
+    margin-top: 150px;
+    line-height: normal;
+}
+
+.diablo-rew{
+  padding: 5px 55px;
+  margin-top: 30px;
+  line-height: normal;
+}
+
+.reason-2 .block2{
+  background-color: #eeeeee;
+}
+
+/*Поиск*/
+.search-container{
+  position: relative;
+  padding: 40px 350px;
+  height: 212px;
+}
+
+.question{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.question b{
+  font-size: 30px;
+  line-height: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'PT Sans','arial', sans-serif;
+}
+
+.search-block{
+  position: absolute;
+  left: 317px;
+  top: 205px;
+  width: 566px;
+  height: 480px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  background: #ffffff;
+}
+
+.search-title{
+  padding: 13px 0;
+  outline: 1px solid green;
+  background: #766357;
+  text-align: center;
+  color:#ffffff;
+  margin-bottom: 35px;
+}
+
+.search-form{
+  width: 470px;
+  height: 312px;
+  outline: 1px solid green;
+  margin: 0 auto;
+}
+
+/*Подвал*/
+
+footer{
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 469px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  height: 86px;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+
+}
+
+.visitsedona{
+  float: left;
+  margin-left: 33px;
+  margin-top: 23px;
+}
+
+.social{
+  margin-left: 256px;
+  margin-top: 14px;
+  float: left;
+}
+
+.soc{
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+.copyright{
+
+  position: relative;
+  float: left;
+  margin-left: 305px;
+  margin-top: 20px;
+  width: 113px;
+  height: 39px;
+  background: url(../img/acadlogo.png) no-repeat;
+}
+
+.copyright::before{
+  position: absolute;
+  top: 3px;
+  left:-83px;
+  content:'Website by';
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: 'PT Sans','arial', sans-serif;
+}
+
+.twit{
+  background: #81b3d2 url(../img/twit.png) no-repeat 50% 50%;
+}
+
+.face{
+  background: #81b3d2 url(../img/face.png) no-repeat 50% 50%;
+}
+
+.you{
+  background: #81b3d2 url(../img/yout.png) no-repeat 50% 50%;
+}
