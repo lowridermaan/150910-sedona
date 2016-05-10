@@ -90,7 +90,6 @@ a{
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  background: url('../img/map.jpg') no-repeat 50% 99%;
 }
 
 .wrap-hotels{
@@ -351,7 +350,6 @@ a{
 .search-container{
   position: relative;
   padding: 40px 350px 115px 350px  ;
-
   background: #ffffff;
 }
 
@@ -488,7 +486,7 @@ input[type="text"],
   border: none;
   cursor: pointer;
   background: #f2f2f2;
-  padding: 6px 9  px;
+  padding: 6px 9px;
 }
 
 .icon-plus,
@@ -545,6 +543,13 @@ input[type="text"],
   color:#88b6d1;
 }
 
+/*Map*/
+.map{
+  width: 1200px;
+  height: 591px;
+  margin-bottom: -113px;
+  background: url('../img/map.jpg') no-repeat 50% 99%;
+}
 
 /*Подвал*/
 
@@ -558,7 +563,6 @@ footer{
 .container{
   width: 1000px;
   margin: 0 auto;
-
 }
 
 .visitsedona{
