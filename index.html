@@ -4,22 +4,24 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
-<body><!--фотку с горами добавить на фон?-->
+<body>
   <div class="wrap">
-    <header class="header">
-      <nav class="main-menu">
-        <ul class="navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li class="logo-block">
-              <img src="img/logo.png" class="logo" alt="Sedona-logo">
-          </li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header class="main-header">
+  				<nav class="main-navigation">
+  					<ul>
+  					  <li><a href="#">Информация</a></li>
+  					  <li><a href="#">Фото и видео</a></li>
+  					  <li><a href="#">Карта штата</a></li>
+  					  <li><a href="catalog.html">Гостиницы</a></li>
+  					</ul>
+  				</nav>
+  				<div class="header-logo">
+  					<a href="index.html"><img src="img/logo.png" alt="city of Sedona" width="138" height="70"></a>
+  				</div>
+  			</header>
 
     <main class="main-container">
       <div class="logo-banner">
@@ -49,25 +51,64 @@
              <p> Седона – не аттрауцион для туристов, там течет своя жизнь </p>
            </div>
          </div>
+         <div class="reason1-foto">
+         </div>
           <div class="block2">
-            <ul class="reason-list">
-              <li class="list-block pic-up-1"></li> <!--Вписываю инфу и блок соскакивает вниз, уже весь извелся, никак понять не могу что не так-->
-              <li class="list-block pic-up-2"></li>
-              <li class="list-block pic-up-3"></li>
+            <ul class="reason1-list">
+              <li class="list-block pic-up-1">
+                <div class="city-rew">
+                  <span>Жилье</span>
+                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
+              </li> 
+              <li class="list-block pic-up-2">
+                <div class="city-rew">
+                <span>Еда</span>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+               </div>
+             </li>
+              <li class="list-block pic-up-3">
+                <div class="city-rew">
+                  <span>Сувениры</span>
+                  <p>Не только китайского, но и местного производства!</p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
         <div class="reason reason-2">
+            <div class="reason2-foto">
+          </div>
           <div class="block1">
             <div class="up-block-title2">
-
+              <b>Там есть<br>тропа дьявола</b>
+              <p>– №2 –</p>
+              <p> Да,  по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
           <div class="block2">
-            <ul class="reason-list">
-              <li class="list-block"></li>
-              <li class="list-block"></li>
-              <li class="list-block"></li>
+            <ul class="reason2-list">
+              <li class="list-block">
+                <div class="diablo-rew">
+                <span>Небольшая<br>площадь</span>
+                <p>– №3 –</p>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+              <li class="list-block">
+                <div class="diablo-rew">
+                  <span>Красивая<br> дорога</span>
+                  <p>– №4 –</p>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+              </li>
+              <li class="list-block">
+               <div class="diablo-rew">
+                <span>Мало<br> туристов</span>
+                <p>– №5 –</p>
+                <p>Большенство едет в гранд каньон и толпится там</p>
+               </div>
+             </li>
             </ul>
         </div>
       </div>
@@ -75,26 +116,73 @@
 
       <div class="search-container">
         <div class="question">
-          <b></b>
-          <p></p>
+          <b>Заинтересовались?</b>
+          <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
+
         <div class="search-block">
+          <div class="search-title">
+            <h1>Поиск гостиницы в седоне</h1>
+          </div>
+          <form action="#" method="get" class="search-form">
+            <div class="date-block">
+            <div class="date-in">
+              <label>Дата заезда:
+              <input  type="text" class="date" name="date-in"  value="24 апреля 2016" tabindex="1">
+              <span class="icon-calendar"></span>
+              </label>
+            </div>
+            <div class="date-out">
+              <label>Дата выезда:
+              <input  type="text"class="date" name="date-out" value="4 июля 2016" tabindex="2">
+              <span class="icon-calendar"></span>
+              </label>
+            </div>
+          </div>
+
+           <div class="switch-block">
+            <div class="switch-title">Взрослые:</div>
+            <div class="adult-switch">
+              <button class="switch-button" type="button" name="-"><span class="icon-minus"></span>
+              </button>
+              <input type="text" class="numb" name="text" value="2" tabindex="3">
+              <button class="switch-button" type="button" name="+"><span class="icon-plus"></span>
+              </button>
+            </div>
+            <div class="switch-title">Дети:</div>
+            <div class="child-switch">
+              <button  class="switch-button" type="button" name="-"><span class="icon-minus"></span>
+              </button>
+              <input type="text" class="numb" name="text" value="0" tabindex="4">
+              <button  class="switch-button" type="button" name="+"><span class="icon-plus"></span>
+              </button>
+            </div>
+            </div>
+
+            <input type="submit" class="find-button" name="button" value="Найти">
+          </form>
         </div>
       </div>
-
+</main>
       <footer>
-        <div class="container">
+        <div class="container clearfix">
         <div class="visitsedona">
+          <a href="#">#visitsedona</a>
         </div>
         <div class="social">
+         <ul>
+          <li><a class="twit soc" href="#"></a></li>
+          <li><a class="face soc" href="#"></a></li>
+          <li><a class="you soc" href="#"></a></li>
+         </ul>
         </div>
-        <div class="copyright">
-        </div>
+        <a href="#" class="copyright">
+        </a>
         </div>
       </footer>
 </div>
 
-    </main>
+
 
   </body>
 </html>
