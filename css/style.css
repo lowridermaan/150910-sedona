@@ -186,7 +186,7 @@ a{
                        /**************************************hotels.html container**********************************************/
 .main-container-hotels{
   height: 756px;
-  background: url('../img/background_photo_hotels.jpg') no-repeat 50% 0%;
+  /*background: url('../img/background_photo_hotels.jpg') no-repeat 50% 0%;*/
 }
 
                      /*******************************************Блок с надписями***********************************************/
