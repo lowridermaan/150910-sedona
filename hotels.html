@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона-отели</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
 <body>
   <div class="wrap-hotels">
-    <header class="main-header">
-  				<nav class="main-navigation">
-  					<ul>
-  					  <li><a href="#">Информация</a></li>
-  					  <li><a href="#">Фото и видео</a></li>
-  					  <li><a href="#">Карта штата</a></li>
-  					  <li><a href="hotels.html">Гостиницы</a></li>
-  					</ul>
-  				</nav>
-  				<div class="header-logo">
-  					<a href="index.html"><img src="img/logo.png" alt="city of Sedona" width="138" height="70"></a>
-  				</div>
-  			</header>
+    <div class="wrap">
+      <header class="header">
+          <nav class="main-menu">
+            <ul class="navigation">
+             <li><a href="index.html">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li class="logo-block"><a href="index.html" class="header-logo"></a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li><a class="hotels-active" href="hotels.html">Гостиницы</a></li>
+            </ul>
+          </nav>
+        </header>
 
     <main class="main-container-hotels">
       <div class="hotel-filters">
-        <form action="" method="get">
+        <form action="#" method="get">
           <div class="checkbox-filter">
             <div class="perks1 perks">
               <div class="preks-title">Инфраструктура:</div>
@@ -135,22 +135,22 @@
 
     </main>
 
-      <footer>
-        <div class="container clearfix">
-        <div class="visitsedona">
-          <a href="#">#visitsedona</a>
-        </div>
-        <div class="social">
-         <ul>
-          <li><a class="twit soc" href="#"></a></li>
-          <li><a class="face soc" href="#"></a></li>
-          <li><a class="you soc" href="#"></a></li>
-         </ul>
-        </div>
-        <a href="#" class="copyright">
-        </a>
-        </div>
-      </footer>
+    <footer>
+      <div class="container clearfix">
+      <div class="visitsedona">
+        <a href="#">#visitsedona</a>
+      </div>
+      <div class="social">
+       <ul>
+        <li><a class="soc icon-facebook" href="#"></a></li>
+        <li><a class="soc icon-twitter" href="#"></a></li>
+        <li><a class="soc icon-youtube" href="#"></a></li>
+       </ul>
+      </div>
+      <a href="#" class="copyright">
+      </a>
+      </div>
+    </footer>
 </div>
 
   </body>

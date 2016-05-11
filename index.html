@@ -3,25 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
 <body>
   <div class="wrap">
-    <header class="main-header">
-  				<nav class="main-navigation">
-  					<ul>
-  					  <li><a href="#">Информация</a></li>
-  					  <li><a href="#">Фото и видео</a></li>
-  					  <li><a href="#">Карта штата</a></li>
-  					  <li><a href="catalog.html">Гостиницы</a></li>
-  					</ul>
-  				</nav>
-  				<div class="header-logo">
-  					<a href="index.html"><img src="img/logo.png" alt="city of Sedona" width="138" height="70"></a>
-  				</div>
-  			</header>
+    <header class="header">
+        <nav class="main-menu">
+          <ul class="navigation">
+           <li><a href="index.html">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li class="logo-block"><a href="index.html" class="header-logo"></a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
 
     <main class="main-container">
       <div class="logo-banner">
@@ -128,13 +126,13 @@
             <div class="date-block">
             <div class="date-in">
               <label>Дата заезда:
-              <input  type="text" class="date" name="date-in"  value="24 апреля 2016" tabindex="1">
+              <input  type="text" class="date" name="date-in"  value="24 апреля 2016" tabindex="1" required>
               <span class="icon-calendar"></span>
               </label>
             </div>
             <div class="date-out">
               <label>Дата выезда:
-              <input  type="text"class="date" name="date-out" value="4 июля 2016" tabindex="2">
+              <input  type="text" class="date" name="date-out" value="4 июля 2016" tabindex="2" required>
               <span class="icon-calendar"></span>
               </label>
             </div>
@@ -174,9 +172,9 @@
         </div>
         <div class="social">
          <ul>
-          <li><a class="twit soc" href="#"></a></li>
-          <li><a class="face soc" href="#"></a></li>
-          <li><a class="you soc" href="#"></a></li>
+          <li><a class="soc icon-facebook" href="#"></a></li>
+          <li><a class="soc icon-twitter" href="#"></a></li>
+          <li><a class="soc icon-youtube" href="#"></a></li>
          </ul>
         </div>
         <a href="#" class="copyright">
