@@ -116,15 +116,14 @@ a{
    padding: 15px 0;
  }
 
-
-
 .logo-block{
   position: relative;
  }
 
 .navigation .navigation-name.header-logo{
   padding: 0;
-  display: inline;
+  height: 0;
+  z-index: 2;
  }
 
  .navigation li>a:hover{
