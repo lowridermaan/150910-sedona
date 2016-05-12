@@ -83,7 +83,6 @@ a{
 
 .header{
   background-color: #ffffff;
-  padding: 0 72px;
   box-sizing: border-box;
  }
 
@@ -102,24 +101,12 @@ a{
  .navigation li{
   display: inline-block;
   vertical-align: top;
+  text-align: center;
   width: 20%;
   box-sizing: border-box;
  }
 
-.navigation li:nth-child(n+4){
-  text-align: right;
-}
-
-.navigation li:nth-child(2){
-  padding-left: 29px;
-}
-
-.navigation li:nth-child(4){
-  padding-right: 33px;
-}
-
- .navigation li>a,
- .navigation li>span{
+ .navigation .navigation-name{
    display: block;
    font-family: 'PT Sans','arial', sans-serif;
    font-size: 14px;
@@ -129,17 +116,20 @@ a{
    padding: 15px 0;
  }
 
+
+
 .logo-block{
   position: relative;
  }
 
- .header-logo{
-  position: absolute;
+.navigation .navigation-name.header-logo{
+  display: inline-block;
+  vertical-align: top;
   background: url(../img/logo.png) no-repeat;
   width: 138px;
   height: 70px;
-  top:0px;
-  right: 37px;
+
+
  }
 
  .navigation li>a:hover{
@@ -164,12 +154,12 @@ a{
                          /**************************************Index.html container**********************************************/
 .main-container{
   padding-top: 1px;
-  background:  #8e7f7d url('../img/background_photo_1.jpg') no-repeat 50% 0;
+  background:  #ffffff url('../img/background_photo_1.jpg') no-repeat 50% 0;
 }
                        /**************************************hotels.html container**********************************************/
 .main-container-hotels{
   height: 756px;
-  background:  #8e7f7d url('../img/background_photo_hotels.jpg') no-repeat 50% 0%;
+  background:  #ffffff url('../img/background_photo_hotels.jpg') no-repeat 50% 0%;
 }
 
                      /*******************************************Блок с надписями***********************************************/
@@ -321,7 +311,7 @@ a{
   vertical-align: top;
   width: 800px;
   height:256px;
-  background: #a67c66 url('../img/foto_3.jpg') no-repeat;
+  background: #ffffff url('../img/foto_3.jpg') no-repeat;
 }
 
 .city-rew{
