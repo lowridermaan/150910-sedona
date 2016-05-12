@@ -50,11 +50,6 @@ body {
 
 
 
-/*
-li{
-  font-size: 14px;
-  display: inline-block;
-}*/
 
 a{
   text-decoration: none;
@@ -169,12 +164,12 @@ a{
                          /**************************************Index.html container**********************************************/
 .main-container{
   padding-top: 1px;
-  background:  #ffffff url('../img/background_photo_1.jpg') no-repeat 50% 0;
+  background:  #8e7f7d url('../img/background_photo_1.jpg') no-repeat 50% 0;
 }
                        /**************************************hotels.html container**********************************************/
 .main-container-hotels{
   height: 756px;
-  background:  #ffffff url('../img/background_photo_hotels.jpg') no-repeat 50% 0%;
+  background:  #8e7f7d url('../img/background_photo_hotels.jpg') no-repeat 50% 0%;
 }
 
                      /*******************************************Блок с надписями***********************************************/
@@ -194,7 +189,7 @@ a{
   display: block;
   width: 1200px;
   height: 57px;
-  background:  url('../img/deco.png') no-repeat;
+  background: url('../img/deco.png') no-repeat;
 }
 
 .banner-logos{
@@ -276,7 +271,7 @@ a{
   vertical-align: top;
   width: 800px;
   height:256px;
-  background: #ffffff url('../img/foto_2.jpg') no-repeat;
+  background: #2d282f url('../img/foto_2.jpg') no-repeat;
 }
 
 /*Наименование голубых блоков))*/
@@ -326,7 +321,7 @@ a{
   vertical-align: top;
   width: 800px;
   height:256px;
-  background: #ffffff url('../img/foto_3.jpg') no-repeat;
+  background: #a67c66 url('../img/foto_3.jpg') no-repeat;
 }
 
 .city-rew{
@@ -373,7 +368,7 @@ a{
 .search-block{
   position: absolute;
   left: 317px;
-  top: 205px;
+  top: 200px;
   width: 566px;
   height: 480px;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
@@ -443,7 +438,7 @@ input[type="text"],
 .date:hover{
   background: #ebebeb;
 }
-.date:active{
+.date:focus{
   background: #ffffff;
   outline: 2px solid #e5e5e5;
 }
@@ -665,6 +660,7 @@ footer{
 .find-hotels{
   height: 31px;
   border-bottom:1px solid #e5e5e5;
+  background: #ffffff;
   padding: 28px 72px;
 }
 
@@ -892,7 +888,6 @@ input[type="checkbox"]:checked:disabled+label::before{
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box;
 }
 
 .sort-list li{
@@ -941,6 +936,7 @@ input[type="checkbox"]:checked:disabled+label::before{
 /*стрелки*/
 .switches-case{
   display: inline-block;
+  vertical-align: top;
   margin-left: 433px;
   font-size: 23px;
   font-weight: 20px;
@@ -977,6 +973,7 @@ input[type="checkbox"]:checked:disabled+label::before{
 
 .hotel-name{
   display: inline-block;
+  vertical-align: top;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -1001,6 +998,7 @@ input[type="checkbox"]:checked:disabled+label::before{
 
 .type-prise span{
   display: inline-block;
+  vertical-align: top;
   margin-left: 0;
   width: 125px;
 }
