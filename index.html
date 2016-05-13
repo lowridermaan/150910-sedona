@@ -111,79 +111,92 @@
         </div>
       </div>
     </div>
-
-      <div class="search-container">
-        <div class="question">
-          <b>Заинтересовались?</b>
-          <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <div class="search-container">
+      <div class="question">
+        <b>Заинтересовались?</b>
+        <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
-
-        <div class="search-block">
-          <div class="search-title">
-            <h2>Поиск гостиницы в седоне</h2>
-          </div>
-          <form action="#" method="get" class="search-form">
-            <div class="date-block">
-            <div class="date-in">
-              <label>Дата заезда:
-              <input  type="text" class="date" name="date-in"  value="24 апреля 2016" tabindex="1" required>
-              <span class="icon-calendar"></span>
-              </label>
-            </div>
-            <div class="date-out">
-              <label>Дата выезда:
-              <input  type="text" class="date" name="date-out" value="4 июля 2016" tabindex="2" required>
-              <span class="icon-calendar"></span>
-              </label>
-            </div>
-          </div>
-
-           <div class="switch-block">
-            <div class="switch-title">Взрослые:</div>
-            <div class="adult-switch">
-              <button class="switch-button" type="button" name="-"><span class="icon-minus"></span>
-              </button>
-              <input type="text" class="numb" name="text" value="2" tabindex="3">
-              <button class="switch-button" type="button" name="+"><span class="icon-plus"></span>
-              </button>
-            </div>
-            <div class="switch-title">Дети:</div>
-            <div class="child-switch">
-              <button  class="switch-button" type="button" name="-"><span class="icon-minus"></span>
-              </button>
-              <input type="text" class="numb" name="text" value="0" tabindex="4">
-              <button  class="switch-button" type="button" name="+"><span class="icon-plus"></span>
-              </button>
-            </div>
-            </div>
-
-            <input type="submit" class="find-button" name="button" value="Найти">
-          </form>
+        <!--Вспомогательный блок для закрытия формы поиска -->
+        <div class="overlay">
         </div>
-      </div>
-      <div class="map">
-      </div>
-</main>
-
+          <div class="search-block">
+            <a href="#" class="search-btn"><h2>Поиск гостиницы в седоне</h2></a>
+              <form action="#" method="get" class="search-form">
+                <div class="date-block">
+                  <div class="date-in">
+                    <label><span class="label-titel">Дата заезда:</span>
+                      <input  type="text" class="date" name="date-in"  value="24 апреля 2016" tabindex="1" required>
+                      <span class="icon-calendar"></span>
+                    </label>
+                  </div>
+                  <div class="date-out">
+                    <label><span class="label-titel">Дата выезда:</span>
+                      <input  type="text" class="date" name="date-out" value="4 июля 2016" tabindex="2" required>
+                      <span class="icon-calendar"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="switch-block">
+                  <div class="switch-title">Взрослые:</div>
+                  <div class="adult-switch">
+                    <button class="switch-button" type="button" name="-"><span class="icon-minus"></span></button>
+                    <input type="text" class="numb" name="text" value="2" tabindex="3">
+                    <button class="switch-button" type="button" name="+"><span class="icon-plus"></span></button>
+                  </div>
+                  <div class="switch-title">Дети:</div>
+                  <div class="child-switch">
+                    <button  class="switch-button" type="button" name="-"><span class="icon-minus"></span></button>
+                    <input type="text" class="numb" name="text" value="0" tabindex="4">
+                    <button  class="switch-button" type="button" name="+"><span class="icon-plus"></span></button>
+                  </div>
+                </div>
+                <input type="submit" class="find-button" name="button" value="Найти">
+              </form>
+            </div>
+          </div>
+          <div class="map">
+          </div>
+      </main>
+      <!-- Подвал -->
       <footer>
         <div class="container">
-        <div class="visitsedona">
-          <a href="#">#visitsedona</a>
-        </div>
-        <div class="social">
-         <ul>
-          <li><a class="soc icon-twitter" href="#"></a></li>
-          <li><a class="soc icon-facebook" href="#"></a></li>
-          <li><a class="soc icon-youtube" href="#"></a></li>
-         </ul>
-        </div>
-        <a href="#" class="copyright">
-        </a>
+          <div class="visitsedona">
+            <a href="#">#visitsedona</a>
+          </div>
+          <div class="social">
+            <ul>
+              <li><a class="soc icon-twitter" href="#"></a></li>
+              <li><a class="soc icon-facebook" href="#"></a></li>
+              <li><a class="soc icon-youtube" href="#"></a></li>
+            </ul>
+          </div>
+          <a href="#" class="copyright"></a>
         </div>
       </footer>
-</div>
+    </div>
+<!--Скрипт -->
+   <script>
+   var button=document.querySelector(".search-btn");
+   var close=document.querySelector(".overlay");
+   var searchform=document.querySelector(".search-form");
+   var datefocus=searchform.querySelector("[name=date-in]");
 
 
 
-  </body>
+   button.addEventListener("click", function(event){
+   event.preventDefault();
+   console.log("Клик по кнопке которая открывает форму поиска");
+   searchform.classList.add("search-form-show");
+   datefocus.focus();
+
+});
+
+   close.addEventListener("click", function(event){
+   event.preventDefault();
+   console.log("Клик по кнопке которая закрывает форму поиска");
+   searchform.classList.remove("search-form-show");
+
+});
+  </script>
+</body>
 </html>
