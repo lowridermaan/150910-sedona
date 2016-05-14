@@ -117,11 +117,11 @@
         <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <!--Вспомогательный блок для закрытия формы поиска -->
-        <div class="overlay">
-        </div>
+        <!-- <div class="overlay">
+        </div> -->
           <div class="search-block">
             <a href="#" class="search-btn"><h2>Поиск гостиницы в седоне</h2></a>
-              <form action="#" method="get" class="search-form">
+              <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
                 <div class="date-block">
                   <div class="date-in">
                     <label><span class="label-titel">Дата заезда:</span>
@@ -154,7 +154,8 @@
               </form>
             </div>
           </div>
-          <div class="map">
+          <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704650.4174790381!2d-111.84187497226355!3d34.87278309680988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1463245901984" class="map" width="1200" height="591" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </main>
       <!-- Подвал -->
@@ -176,14 +177,15 @@
     </div>
 <!--Скрипт -->
    <script>
-   var button=document.querySelector(".search-btn");
-   var close=document.querySelector(".overlay");
+   var open=document.querySelector(".search-btn");
+   var close=document.querySelector(".find-button");
    var searchform=document.querySelector(".search-form");
    var datefocus=searchform.querySelector("[name=date-in]");
+   var dateout=searchform.querySelector("[name=date-out]");
 
 
 
-   button.addEventListener("click", function(event){
+   open.addEventListener("click", function(event){
    event.preventDefault();
    console.log("Клик по кнопке которая открывает форму поиска");
    searchform.classList.add("search-form-show");
@@ -196,6 +198,17 @@
    console.log("Клик по кнопке которая закрывает форму поиска");
    searchform.classList.remove("search-form-show");
 
+});
+
+   searchform.addEventListener("submit", function(event){
+   event.preventDefault();
+   console.log("Отправляем форму");
+});
+
+   searchform.addEventListener("submit", function(event){
+   event.preventDefault();
+   console.log("date-in.value");
+   console.log("date-out.value");
 });
   </script>
 </body>
