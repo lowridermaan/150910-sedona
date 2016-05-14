@@ -117,7 +117,7 @@
         <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <!--Вспомогательный блок для закрытия формы поиска -->
-        <!-- <div class="overlay">
+        <!-- <div class="overlay test">
         </div> -->
           <div class="search-block">
             <a href="#" class="search-btn"><h2>Поиск гостиницы в седоне</h2></a>
@@ -176,39 +176,36 @@
       </footer>
     </div>
 <!--Скрипт -->
-   <script>
-   var open=document.querySelector(".search-btn");
-   var close=document.querySelector(".find-button");
-   var searchform=document.querySelector(".search-form");
-   var datefocus=searchform.querySelector("[name=date-in]");
-   var dateout=searchform.querySelector("[name=date-out]");
+<script>
+var open=document.querySelector(".search-btn");
+var close=document.querySelector("iframe");
+var searchform=document.querySelector(".search-form");
+var datefocus=searchform.querySelector("[name=date-in]");
+var dateout=searchform.querySelector("[name=date-out]");
 
 
-
-   open.addEventListener("click", function(event){
-   event.preventDefault();
-   console.log("Клик по кнопке которая открывает форму поиска");
-   searchform.classList.add("search-form-show");
-   datefocus.focus();
-
+open.addEventListener("click", function(event){
+event.preventDefault();
+console.log("Клик по кнопке которая открывает форму поиска");
+searchform.classList.add("search-form-show");
+datefocus.focus();
 });
 
-   close.addEventListener("click", function(event){
-   event.preventDefault();
-   console.log("Клик по кнопке которая закрывает форму поиска");
-   searchform.classList.remove("search-form-show");
-
+close.addEventListener("click", function(event){
+event.preventDefault();
+console.log("Клик по карте закрывает форму поиска");
+searchform.classList.remove("search-form-show");
 });
 
-   searchform.addEventListener("submit", function(event){
-   event.preventDefault();
-   console.log("Отправляем форму");
+searchform.addEventListener("submit", function(event){
+event.preventDefault();
+console.log("Отправляем форму");
 });
 
-   searchform.addEventListener("submit", function(event){
-   event.preventDefault();
-   console.log("date-in.value");
-   console.log("date-out.value");
+searchform.addEventListener("submit", function(event){
+event.preventDefault();
+console.log("date-in.value");
+console.log("date-out.value");
 });
   </script>
 </body>
