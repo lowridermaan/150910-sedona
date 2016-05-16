@@ -106,6 +106,7 @@ a{
   box-sizing: border-box;
  }
 
+.navigation .active,
  .navigation .navigation-name{
    display: block;
    font-family: "PT Sans","arial", sans-serif;
@@ -134,15 +135,17 @@ a{
    color: #b2b2b2;
  }
 
- .active{
-   color: #88786d;
+.navigation .active{
+   color: #766357;
  }
 
- .active:hover{
+.navigation .active:hover{
    color: #604e43;
  }
 
-
+ .navigation .active:active{
+    color: #d6d0cc;
+  }
 
 
 /*Index.html container*/
