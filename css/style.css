@@ -286,6 +286,7 @@ a{
 .up-block-title-two p{
   font-size: 14px;
   line-height: 21px;
+  font-weight: normal;
 }
 
 .block-two ul{
