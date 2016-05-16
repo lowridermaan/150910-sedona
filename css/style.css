@@ -53,7 +53,6 @@ body {
 
 a{
   text-decoration: none;
-  text-transform: uppercase;
   color: #000000;
 }
 
@@ -106,7 +105,8 @@ a{
   box-sizing: border-box;
  }
 
- .navigation .navigation-name{
+ .navigation .navigation-name,
+ .navigation .active{
    display: block;
    font-family: "PT Sans","arial", sans-serif;
    font-size: 14px;
@@ -134,15 +134,17 @@ a{
    color: #b2b2b2;
  }
 
- .active{
-   color: #88786d;
+.navigation .active{
+   color: #766357;
  }
 
- .active:hover{
+.navigation .active:hover{
    color: #604e43;
  }
 
-
+ .navigation .active:active{
+    color: #d6d0cc;
+  }
 
 
 /*Index.html container*/
@@ -1077,7 +1079,6 @@ input[type="checkbox"]:checked:disabled+label::before{
   background: #503e33;
   color:#766860;
 }
-
 
 .rating{
   float: right;
