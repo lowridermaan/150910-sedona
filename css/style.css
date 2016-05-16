@@ -108,7 +108,7 @@ a{
 
  .navigation .navigation-name{
    display: block;
-   font-family: 'PT Sans','arial', sans-serif;
+   font-family: "PT Sans","arial", sans-serif;
    font-size: 14px;
    line-height: 26px;
    font-weight: bold;
@@ -148,13 +148,13 @@ a{
 /*Index.html container*/
 .main-container{
   padding-top: 1px;
-  background:  #ffffff url('../img/background_photo_1.jpg') no-repeat 50% 0;
+  background:  #ffffff url("../img/background_photo_1.jpg") no-repeat 50% 0;
 }
 
 /*hotels.html container*/
 .main-container-hotels{
   height: 756px;
-  background:  #ffffff url('../img/background_photo_hotels.jpg') no-repeat 50% 0%;
+  background:  #ffffff url("../img/background_photo_hotels.jpg") no-repeat 50% 0%;
 }
 
 /*Блок с надписями*/
@@ -165,7 +165,7 @@ a{
 }
 
 .logo-banner::after{
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -173,7 +173,7 @@ a{
   display: block;
   width: 1200px;
   height: 57px;
-  background: url('../img/deco.png') no-repeat;
+  background: url("../img/deco.png") no-repeat;
 }
 
 .banner-logos{
@@ -209,8 +209,8 @@ a{
 
 
 .summary-title,
-.up-block-title1,
-.up-block-title2,
+.up-block-title-one,
+.up-block-title-two,
 .city-rew span,
 .diablo-rew span,
 .search-btn h2,
@@ -219,7 +219,7 @@ a{
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'PT Sans','arial', sans-serif;
+  font-family: "PT Sans","arial", sans-serif;
 }
 
 .summary p,
@@ -231,18 +231,18 @@ a{
   line-height: 26px;
   font-weight: lighter;
   text-transform: uppercase;
-  font-family: 'PT Sans','arial', sans-serif;
+  font-family: "PT Sans","arial", sans-serif;
 }
 
 /*Блоки с причинами*/
 .reason{
   font-size: 0;
 }
-.reason-1{
-  margin-bottom: 53px;
+.reason-one{
+  margin-bottom: 55px;
 }
 
-.block1{
+.block-one{
   display: inline-block;
   vertical-align: top;
   width: 400px;
@@ -250,24 +250,24 @@ a{
   color: #ffffff;
 }
 
-.reason1-foto{
+.reason-one-foto{
   display: inline-block;
   vertical-align: top;
   width: 800px;
   height:256px;
-  background: #2d282f url('../img/foto_2.jpg') no-repeat;
+  background: #2d282f url("../img/foto_2.jpg") no-repeat;
 }
 
 /*Наименование голубых блоков))*/
-.up-block-title1,
-.up-block-title2{
+.up-block-title-one,
+.up-block-title-two{
   margin: 0px 50px;
-  padding-top: 40px;
-  padding-bottom: 59px;
+  padding-top: 55px;
+  padding-bottom: 44px;
   text-align: center;
 }
 
-.up-block-title2{
+.up-block-title-two{
   margin: 0px 40px;
 }
 
@@ -279,15 +279,13 @@ a{
   text-align: center;
 }
 
-.up-block-title1 p,
-.up-block-title2 p,
-.city-rew p,
-.diablo-rew p{
+.up-block-title-one p,
+.up-block-title-two p{
   font-size: 14px;
   line-height: 21px;
 }
 
-.block2 ul{
+.block-two ul{
   font-size: 0;
   margin: 0;
   padding: 0;
@@ -295,24 +293,24 @@ a{
   box-sizing: border-box;
 }
 
-.pic-up-1{
-  background:  #ffffff url('../img/house.png') no-repeat 50% 30%;
+.pic-up-one{
+  background:  #ffffff url("../img/house.png") no-repeat 50% 30%;
 }
 
-.pic-up-2{
-  background:  #ffffff url('../img/burger.png') no-repeat 50% 30%;
+.pic-up-two{
+  background:  #ffffff url("../img/burger.png") no-repeat 50% 30%;
 }
 
-.pic-up-3{
-  background:  #ffffff url('../img/prise.png') no-repeat 50% 29%;
+.pic-up-three{
+  background:  #ffffff url("../img/prise.png") no-repeat 50% 29%;
 }
 
-.reason2-foto{
+.reason-two-foto{
   display: inline-block;
   vertical-align: top;
   width: 800px;
   height:256px;
-  background: #ffffff url('../img/foto_3.jpg') no-repeat;
+  background: #ffffff url("../img/foto_3.jpg") no-repeat;
 }
 
 .city-rew{
@@ -326,7 +324,7 @@ a{
   line-height: normal;
 }
 
-.reason-2 .block2{
+.reason-two .block-two{
   background-color: #eeeeee;
 }
 
@@ -339,7 +337,6 @@ a{
   background: #ffffff;
   pointer-events: none;
 }
-
 
 .question{
   padding-top: 5px;
@@ -357,7 +354,7 @@ a{
   line-height: 21px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'PT Sans','arial', sans-serif;
+  font-family: "PT Sans","arial", sans-serif;
 }
 
 .search-block{
@@ -367,16 +364,6 @@ a{
   width: 566px;
   height: 480px;
 }
-
-/*.overlay{
-  position: absolute;
-  left:0;
-  top:0;
-  width: 1200px;
-  height: 760px;
-  z-index: 1;
-  outline: 1px solid red;
-}*/
 
 .search-btn{
   display: block;
@@ -394,11 +381,10 @@ a{
   box-shadow: inset 0 0 50px rgba(0,0,0,0.4);
 }
 
-/*Блок который отобраается с помощью JS при нажатии на кнопку .search-btn */
+/*Блок который отображается с помощью JS при нажатии на кнопку .search-btn */
 .search-form{
-  position: relative;
-  z-index: 2;
-  font-family: 'PT Sans','arial', sans-serif;
+  display: none;
+  font-family: "PT Sans","arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -407,11 +393,14 @@ a{
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
   pointer-events: all;
-  display: none;
 }
 
 .search-form-show{
   display: block;
+}
+
+.search-form-hide{
+  display: none;
 }
 
 
@@ -424,7 +413,7 @@ a{
   padding-right: 15px;
   border: none;
   background: #f2f2f2;
-  font-family: 'PT Sans','arial', sans-serif;
+  font-family: "PT Sans","arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -516,7 +505,7 @@ input[type="text"],
 
 .adult-switch{
   margin-left: 35px;
-  margin-right: 45px;
+  margin-right: 50px;
 }
 
 .child-switch{
@@ -566,30 +555,29 @@ input[type="text"],
 footer{
   position: relative;
   z-index: 2;
+  font-size: 0;
+  padding: 33px 100px 39px 133px;
+  box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 36px 133px;
-}
-
-.container{
-  width: 1000px;
-  margin: 0 auto;
 }
 
 .visitsedona{
   display: inline-block;
   vertical-align: top;
-  padding-top: 10px;
+  padding-top: 9px;
+  width: 33.334%;
 }
 
 .social{
   display: inline-block;
   vertical-align: top;
-  margin-left: 253px;
+  text-align: center;
+  width: 33.334%;
 }
 
 .social ul{
   font-size: 0;
-  margin: 0;
+  margin-right: 25px;
   padding: 0;
   list-style: none;
 }
@@ -602,13 +590,11 @@ footer{
 .social li:nth-child(2)> a{
   font-size: 19px;
   line-height: 20px;
-  color:#ffffff;
 }
 
 .social li:nth-child(3)> a{
   font-size: 23px;
   line-height: 20px;
-  color:#ffffff;
 }
 
 
@@ -620,6 +606,7 @@ footer{
   margin-right: 6px;
   padding-top: 13px;
   text-align: center;
+  color:#ffffff;
   background: #81b3d2;
   box-sizing: border-box;
 }
@@ -632,14 +619,22 @@ footer{
   color:#88b6d1;
 }
 
+
+
+.copyright-block{
+  width: 33.334%;
+  display:inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
 .copyright{
   display:inline-block;
   vertical-align: top;
   position: relative;
+  margin-top: 5px;
   width: 113px;
   height: 39px;
-  margin-left: 300px;
-  margin-top: 5px;
   background: url(../img/acadlogo.png) no-repeat;
 }
 
@@ -655,12 +650,12 @@ footer{
   position: absolute;
   top: 5px;
   left:-82px;
-  content:'Website by';
+  content:"Website by";
   font-size: 14px;
   line-height: 26px;
   font-weight: lighter;
   text-transform: uppercase;
-  font-family: 'PT Sans','arial', sans-serif;
+  font-family: "PT Sans","arial", sans-serif;
 }
 
 /*HOTELS*/
@@ -700,6 +695,7 @@ footer{
   display: inline-block;
   vertical-align: top;
   margin-right: 115px;
+  margin-top: 5px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -712,8 +708,8 @@ input[type="checkbox"]{
 
 input[type="checkbox"]+label{
   display: block;
-  margin: 22px 0;
-  padding-left: 45px;
+  margin: 26px 0;
+  padding-left: 40px;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
@@ -766,13 +762,15 @@ input[type="checkbox"]:checked:disabled+label::before{
 .filter-range {
   display: inline-block;
   vertical-align: top;
+  padding-top: 5px;
   width: 330px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
+  margin-left: 3px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -780,8 +778,9 @@ input[type="checkbox"]:checked:disabled+label::before{
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
+  margin-left: 13px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -801,15 +800,19 @@ input[type="checkbox"]:checked:disabled+label::before{
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 28px;
+  font-weight: normal;
   vertical-align: top;
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price{
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 58px;
 }
 
 .price-controls input {
@@ -825,6 +828,7 @@ input[type="checkbox"]:checked:disabled+label::before{
 .range-controls {
   position: relative;
   margin-bottom: 32px;
+    margin-left: 13px;
 }
 
 .range-controls .scale {
@@ -867,6 +871,7 @@ input[type="checkbox"]:checked:disabled+label::before{
   margin: 0 auto;
   padding: 6px 35px;
   font-size: 14px;
+  font-weight: normal;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;

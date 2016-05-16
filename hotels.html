@@ -24,21 +24,22 @@
     <main class="main-container-hotels">
       <!--Фильтры -->
       <div class="hotel-filters">
-        <form action="#" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <div class="checkbox-filter">
             <div class="perks1 perks">
               <div class="preks-title">Инфраструктура:</div>
-                <input type="checkbox" name="pool" id="pool"><label class="checkbox" for="pool">Бассейн</label>
-                <input type="checkbox" name="park" id="park" disabled><label class="checkbox" for="park">Парковка</label>
+                <input type="checkbox" name="pool" id="pool" checked><label class="checkbox" for="pool" >Бассейн</label>
+                <input type="checkbox" name="park" id="park"><label class="checkbox" for="park">Парковка</label>
                 <input type="checkbox" name="wifi" id="wifi"><label class="checkbox" for="wifi">Wi-fi</label>
             </div>
             <div class="perks2 perks">
               <div class="preks-title">Тип жилья:</div>
-              <input type="checkbox" name="hotel" id="hotel" checked disabled><label class="checkbox" for="hotel">Гостиница</label>
-              <input type="checkbox" name="motel" id="motel"><label class="checkbox" for="motel">Мотель</label>
-              <input type="checkbox" name="aprt"  id="aprt"><label class="checkbox" for="aprt">Апартаменты</label>
+              <input type="checkbox" name="hotel" id="hotel" checked><label class="checkbox" for="hotel">Гостиница</label>
+              <input type="checkbox" name="motel" id="motel"checked><label class="checkbox" for="motel">Мотель</label>
+              <input type="checkbox" name="aprt"  id="aprt" checked><label class="checkbox" for="aprt">Апартаменты</label>
             </div>
           </div>
+          <!-- сложный фильтр -->
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
@@ -133,21 +134,22 @@
         </div>
       </div>
     </main>
-    <!-- Футер -->
+    <!-- Подвал -->
     <footer>
-      <div class="container clearfix">
-      <div class="visitsedona">
-        <a href="#">#visitsedona</a>
+      <div class="container">
+        <div class="visitsedona">
+          <a href="#">#visitsedona</a>
+        </div>
+        <div class="social">
+          <ul>
+            <li><a class="soc icon-twitter" href="https://twitter.com/"></a></li>
+            <li><a class="soc icon-facebook" href="https://www.facebook.com/"></a></li>
+            <li><a class="soc icon-youtube" href="https://www.youtube.com/"></a></li>
+          </ul>
+        </div>
+        <div class="copyright-block">
+        <a href="#" class="copyright"></a>
       </div>
-      <div class="social">
-       <ul>
-        <li><a class="soc icon-twitter" href="#"></a></li>
-        <li><a class="soc icon-facebook" href="#"></a></li>
-        <li><a class="soc icon-youtube" href="#"></a></li>
-       </ul>
-      </div>
-      <a href="#" class="copyright">
-      </a>
       </div>
     </footer>
 </div>
