@@ -373,6 +373,7 @@ a {
 /*Начало анимации*/
 @keyframes stretching {
     0% {
+        padding: 0;
         height:0;
     }
     100% {
@@ -385,6 +386,7 @@ a {
 }
 @keyframes visible{
     0% {
+      position: fixed;
       outline: none;
       background-color: transparent;
       color:  transparent;
@@ -392,7 +394,7 @@ a {
 }
 .search-form *{
     animation-name: visible;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 /*Конец анимации*/
 .search-form-show {
