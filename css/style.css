@@ -366,7 +366,11 @@ a {
         -ms-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-/*Начало нимации*/
+
+.search-btn:active+.search-form{
+  display: block;
+}
+/*Начало анимации*/
 @keyframes stretching {
     0% {
         height:0;
